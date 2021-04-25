@@ -1,0 +1,178 @@
+                            /*Setting*/
+                            
+                            html,
+                            body {
+                                margin: 0%;
+                                overflow-x: hidden;
+                            }
+                            
+                             :root {
+                                /* Theme colors */
+                                --fhems-gray: #52514e;
+                                --fhems-brown: #7c3a1c;
+                                --fhems-blue: #3B507E;
+                                --fhems-yellow: #e3b45a;
+                                --fhems-white: #f7f5f0;
+                                --text-white: #C4C4C4;
+                            }
+                            
+                            .btn {
+                                flex: none;
+                                order: 2;
+                                flex-grow: 0;
+                                margin: 12px 0px;
+                            }
+                            /* Universal */
+                            
+                            h1 {
+                                font-family: 'Changa', sans-serif;
+                                font-weight: 800 !important;
+                            }
+                            
+                            h2 {
+                                font-family: 'Changa', sans-serif;
+                                font-weight: bold !important;
+                            }
+                            
+                            h3 {
+                                font-family: 'Changa', sans-serif;
+                                font-weight: bold !important;
+                            }
+                            
+                            h4 {
+                                font-family: 'Changa', sans-serif;
+                                font-weight: 600 !important;
+                            }
+                            
+                            h5 {
+                                font-family: 'Changa', sans-serif;
+                                font-weight: 600 !important;
+                            }
+                            
+                            h6 {
+                                font-family: 'Changa', sans-serif;
+                                font-weight: 500 !important;
+                            }
+                            
+                            p {
+                                font-family: 'Cairo', sans-serif;
+                            }
+                            
+                            .container,
+                            .page-main {
+                                background-color: var(--fhems-white);
+                            }
+                            
+                            .page-main {
+                                color: var(--fhems-gray);
+                            }
+                            /* Nav Bar*/
+                            
+                            .nav1 {
+                                background-color: var(--fhems-blue);
+                                height: 70px;
+                                color: var(--fhems-white);
+                            }
+                            
+                            .nav2 {
+                                background-color: var(--fhems-yellow);
+                                height: 30px;
+                                line-height: 30px;
+                                font-family: 'Cairo', sans-serif;
+                                font-weight: 700;
+                                font-size: 1rem;
+                                color: var(--fhems-white);
+                            }
+                            /* Page */
+                            
+                            .page-banner {
+                                top: 100px;
+                                height: 180px;
+                                background-color: rgb(72, 70, 75);
+                                /* ^^^^^^^^^^^^^^^^^^^^^^^^   replace image later*/
+                                color: var(--fhems-yellow);
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: start;
+                            }
+                            
+                            .page-banner-title {
+                                background-color: transparent;
+                            }
+                            /*Page Path*/
+                            
+                            .page-path .fas {
+                                margin-left: -0.8rem;
+                            }
+                            
+                            .breadcrumb {
+                                background-color: transparent !important;
+                                font-family: 'Cairo', sans-serif !important;
+                                font-size: 0.8rem;
+                            }
+                            /* Page Main*/
+                            
+                            .container {
+                                margin-bottom: 10%;
+                                margin-top: 10%;
+                            }
+                            
+                            .card {
+                                box-shadow: 1px 1px 3px var(--fhems-gray);
+                                border: none !important;
+                                border-radius: 1rem !important;
+                            }
+                            
+                            .card img {
+                                width: 290px;
+                                height: 219px;
+                            }
+                            
+                            .card-img-top {
+                                background-color: transparent;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            
+                            .card-img-top img {
+                                display: block;
+                                width: 100%;
+                                max-height: 100%;
+                                overflow: hidden;
+                                border-radius: 1rem 0 0 1rem;
+                            }
+                            
+                            .card-body {
+                                background-color: transparent;
+                                border-radius: 0 1rem 1rem 0;
+                            }
+                            
+                            .card-text {
+                                color: var(--fhems-brown);
+                            }
+                            
+                            @media screen and (max-width: 767px) {
+                                .card img {
+                                    width: 100%;
+                                    max-height: 100%;
+                                    border-radius: 1rem 1rem 0 0;
+                                }
+                            }
+                            
+                            @media screen and (min-width: 768px) and (max-width: 991px) {
+                                .card img {
+                                    width: 330px;
+                                    height: 219px;
+                                    max-height: 100%;
+                                    padding-left: 1rem;
+                                    padding-top: 1rem;
+                                    padding-bottom: 1rem;
+                                }
+                            }
+                            /* Footer */
+                            
+                            footer {
+                                background-color: var(--fhems-blue);
+                                height: 160px;
+                            }

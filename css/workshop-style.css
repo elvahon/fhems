@@ -4,6 +4,7 @@ html,
 body {
     margin: 0%;
     overflow-x: hidden;
+    background-color: var(--fhems-white) !important;
 }
 
 :root {
@@ -56,7 +57,7 @@ p {
 .container,
 .page-path,
 .page-main {
-    background-color: var(--fhems-white);
+    background-color: transparent;
 }
 
 .page-main {

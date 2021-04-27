@@ -27,3 +27,11 @@
     top: 0;
     transform: translateX(-50%);
 }
+
+.modal p {
+    font-family: 'sourcehansans-tc';
+}
+
+.modal h5 {
+    font-family: "sourcehansans-tc";
+}

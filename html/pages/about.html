@@ -8,6 +8,7 @@
     <title>FHEMS - About</title>
 
     <!-- [Elva] CSS Link -->
+    <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/about-style.css">
 
     <!-- [Elva] Bootstrap Link -->
@@ -24,14 +25,102 @@
 </head>
 
 <body>
-    <!-- [Elva] Nav Bar *** Temp ONLY! Need replacement later -->
-    <nav class="nav1">
-        <h2> Nav1 </h2>
-    </nav>
-    <nav class="nav2">
-        <span>ABOUT | SERVICES | ...</span>
-    </nav>
+    <!-- [Elva] Nav Bar Desktop -->
+    <div class="Desktop-Nav fixed-top">
+        <nav class="nav1 container-fluid px-5">
+            <div class="header-head d-flex flex-row ">
+                <div class="head-logo">
+                    <a href="./index.html"><img src="../../assets/images/FHEMS_H_Logo-01.png"></a>
+                </div>
+                <div class="head-social d-flex align-items-center">
+                    <a href="#"><span class="EN-icon">EN</span></a>
+                    <a href="#"><span class="CHI-icon">繁</span></a>
+                    <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                    <a href="./involved.html"><button type="button" class="btn btn-outline-light">GET INVOLVED</button></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2 container-fluid px-5 navbar navbar-expand-md navbar-light sticy-top">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-link">
+                        <a href="./about.html" class="">ABOUT</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./services.html">SERVICES</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./research.html">RESEARCH & PUBLICATIONS</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./workshop.html">LANGUAGE WORKSHOP</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./press.html">PRESS</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./acknowledge.html">ACKNOWLEDGEMENTS</a>
+                    </li>
+                </ul>
 
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- [Elva] Nav Bar Mobile -->
+    <div class="Mobile-Nav fixed-top">
+        <nav class="px-5 navbar navbar-dark ">
+            <div class="head-logo">
+                <img src="../../assets/images/FHEMS_H_Logo-01.png">
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+  </button>
+            <div class="collapse navbar-collapse text-center mt-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./services.html">SERVICES </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./research.html">RESEARCH & PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workshop.html">LANGUAGE WORKSHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./press.html">PRESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acknowledge.html">ACKNOWLEDGEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./involved.html">GET INVOLVED</a>
+                    </li>
+                    <div class="mobile-icon-container ">
+                        <div class="head-social d-flex align-items-center justify-content-between">
+                            <a href="#"><span class="EN-icon">EN</span></a>
+                            <a href="#"><span class="CHI-icon">繁</span></a>
+                            <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                        </div>
+                    </div>
+
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
 
     <!-- [Elva] Page Banner **change bg-color to image in css-->
     <div class="page-banner container-fluid">
@@ -46,13 +135,13 @@
     <div class="page-path">
         <nav aria-label="breadcrumb" class="container">
             <ol class="breadcrumb border-bottom pt-4 mb-0">
-                <li class="breadcrumb-item"><a href="#"><i class="fas fa-home fa-sm mr-1"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home fa-sm mr-1"></i>Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">About</li>
-                <li class="breadcrumb-item active" aria-current="page">About FHEMS</li> 
-                <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
-                <li class=""><a href="#">Who is Fredie</a></li>
-                <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
-                <li class=""><a href="#">Work Reports</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About FHEMS</li>
+                <p class="seperate active">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                <li class="breadcrumb-item"><a href="#whoIsFredie">Who is Fredie</a></li>
+                <p class="seperate active">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                <li class="breadcrumb-item"><a href="#workReports">Work Reports</a></li>
 
             </ol>
         </nav>
@@ -63,28 +152,29 @@
             <!--About FHEMS-->
             <div class="fhems clearfix mb-5">
                 <h2>About FHEMS</h2>
-                <p>Fredie Hung Ethnic Minorities Service (FHEMS) is initiated in Spring 2020 to connect and allocate relevant social resources and community networks, to enhance accessibility to information and knowledge of civil society, to magnify their participation in Hong Kong as citizens, and to promote inter-cultural mutual understandings. Works have been done to fulfill both the needs of anti-pandemic materials and also information, such as continuous masks distribution, and broadcasting social distancing measures and pandemic situation updates.</p>
+                <p>Fredie Hung Ethnic Minorities Service (FHEMS) is initiated in Spring 2020 to connect and allocate relevant social resources and community networks, to enhance accessibility to information and knowledge of civil society, to magnify their
+                    participation in Hong Kong as citizens, and to promote inter-cultural mutual understandings. Works have been done to fulfill both the needs of anti-pandemic materials and also information, such as continuous masks distribution, and
+                    broadcasting social distancing measures and pandemic situation updates.</p>
             </div>
 
             <!--Who is Fredie-->
-            <h2>Who is Fredie</h2>
+            <h2 id="whoIsFredie">Who is Fredie</h2>
             <div class="fredie-card mb-3 bg-transparent border-0">
                 <div class="row no-gutters">
                     <div class="col-md-7">
                         <div class="fredie-card-body card-body pl-0 pt-0">
-                            
-                            <p class="card-text">I’m Fredie Hung, registered social worker in HK, graduate of master in anthropology and religious studies in CUHK.
-                                After graduation, I have been living in Athens and Mumbai for one year each to study Greek and Sanskrit respectively.
-                                As a beginner-learner of Nepalese, Hindi, Arabic and Khmer, it is my pleasure to learn more from different ethnic communities in HK. Please share your language and culture with me.
-                                I’ve been volunteering in HK Anatolia Cultural Centre in organizing Cantonese lessons for Turkish who stays in HK. Currently, I’m the advisor of HK Integrated Nepalese Society and the founding member of WorKhmer, an NGO concerning human trafficking in Cambodia.</p>
-                            
+
+                            <p class="card-text">I’m Fredie Hung, registered social worker in HK, graduate of master in anthropology and religious studies in CUHK. After graduation, I have been living in Athens and Mumbai for one year each to study Greek and Sanskrit respectively.
+                                As a beginner-learner of Nepalese, Hindi, Arabic and Khmer, it is my pleasure to learn more from different ethnic communities in HK. Please share your language and culture with me. I’ve been volunteering in HK Anatolia
+                                Cultural Centre in organizing Cantonese lessons for Turkish who stays in HK. Currently, I’m the advisor of HK Integrated Nepalese Society and the founding member of WorKhmer, an NGO concerning human trafficking in Cambodia.</p>
+
                         </div>
                     </div>
 
                     <div class="fredie-card-image col-md-5 ">
                         <img src="../../assets/images/aboutfredie.jpeg" alt="...">
                     </div>
-                  
+
                 </div>
             </div>
 
@@ -94,68 +184,67 @@
 
                 <div class="related-org-card-container container d-flex flex-column  align-items-center">
                     <!--Related Org Card 1-->
-                    <div class="related-org-card card mb-3 bg-transparent border-0" >
+                    <div class="related-org-card card mb-3 bg-transparent border-0">
                         <div class="row no-gutters">
-                          <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
-                            <img src="../../assets/images/cropped-hins-web-logo.png" alt="...">
-                          </div>
-                          <div class="col-sm-7 col-md-9 col-lg-10">
-                            <div class="related-org-card-body card-body">
-                              <h5 class="card-title">Hong Kong Integrated Nepalese Society Limited (HINS)  </h5>
-                              <p class="card-text">Hong Kong Integrated Nepalese Society Limited (HINS)  actively assisted the Nepalese Community in solving their daily problems and to facilitate integration into the mainstream society.</p>
+                            <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
+                                <img src="../../assets/images/cropped-hins-web-logo.png" alt="...">
                             </div>
-                          </div>
+                            <div class="col-sm-7 col-md-9 col-lg-10">
+                                <div class="related-org-card-body card-body">
+                                    <h5 class="card-title">Hong Kong Integrated Nepalese Society Limited (HINS) </h5>
+                                    <p class="card-text">Hong Kong Integrated Nepalese Society Limited (HINS) actively assisted the Nepalese Community in solving their daily problems and to facilitate integration into the mainstream society.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!--Related Org Card 2-->
-                    <div class="related-org-card card mb-3 bg-transparent border-0" >
+                    <div class="related-org-card card mb-3 bg-transparent border-0">
                         <div class="row no-gutters">
-                          <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
-                            <img src="../../assets/images/wk-logo.png" alt="...">
-                          </div>
-                          <div class="col-sm-7 col-md-9 col-lg-10">
-                            <div class="related-org-card-body card-body">
-                              <h5 class="card-title">WorKhmer - Cambodia</h5>
-                              <p class="card-text">"LEGAL WORKER, LEGITIMATE TO WONDER." <br>
-                                WK provides a Legal Platform, for high risk villagers to enjoy their Rights, Identity, Job, Dignity & Freedom to Dream in Christ.
-                            </p>
+                            <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
+                                <img src="../../assets/images/wk-logo.png" alt="...">
                             </div>
-                          </div>
+                            <div class="col-sm-7 col-md-9 col-lg-10">
+                                <div class="related-org-card-body card-body">
+                                    <h5 class="card-title">WorKhmer - Cambodia</h5>
+                                    <p class="card-text">"LEGAL WORKER, LEGITIMATE TO WONDER." <br> WK provides a Legal Platform, for high risk villagers to enjoy their Rights, Identity, Job, Dignity & Freedom to Dream in Christ.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!--Related Org Card 3-->
-                    <div class="related-org-card card mb-3 bg-transparent border-0" >
+                    <div class="related-org-card card mb-3 bg-transparent border-0">
                         <div class="row no-gutters">
-                          <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
-                            <h5 style="text-align: center;">機構財務<br>研究組</h5>
-                          </div>
-                          <div class="col-sm-7 col-md-9 col-lg-10">
-                            <div class="related-org-card-body card-body">
-                              <h5 class="card-title">機構財務研究組</h5>
-                              <p class="card-text">Hong Kong Integrated Nepalese Society Limited (HINS)  actively assisted the Nepalese Community in solving their daily problems and to facilitate integration into the mainstream society.</p>
+                            <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
+                                <h5 style="text-align: center;">機構財務<br>研究組</h5>
                             </div>
-                          </div>
+                            <div class="col-sm-7 col-md-9 col-lg-10">
+                                <div class="related-org-card-body card-body">
+                                    <h5 class="card-title">機構財務研究組</h5>
+                                    <p class="card-text">Hong Kong Integrated Nepalese Society Limited (HINS) actively assisted the Nepalese Community in solving their daily problems and to facilitate integration into the mainstream society.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!--Related Org Card 4-->
-                    <div class="related-org-card card mb-3 bg-transparent border-0" >
+                    <div class="related-org-card card mb-3 bg-transparent border-0">
                         <div class="row no-gutters">
-                          <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
-                            <h5 style="text-align: center;">機構財務<br>研究組</h5>
-                          </div>
-                          <div class="col-sm-7 col-md-9 col-lg-10">
-                            <div class="related-org-card-body card-body">
-                              <h5 class="card-title">機構財務研究組</h5>
-                              <p class="card-text">Hong Kong Integrated Nepalese Society Limited (HINS)  actively assisted the Nepalese Community in solving their daily problems and to facilitate integration into the mainstream society.</p>
+                            <div class="related-org-card-image col-sm-4 col-md-3 col-lg-2">
+                                <h5 style="text-align: center;">機構財務<br>研究組</h5>
                             </div>
-                          </div>
+                            <div class="col-sm-7 col-md-9 col-lg-10">
+                                <div class="related-org-card-body card-body">
+                                    <h5 class="card-title">機構財務研究組</h5>
+                                    <p class="card-text">Hong Kong Integrated Nepalese Society Limited (HINS) actively assisted the Nepalese Community in solving their daily problems and to facilitate integration into the mainstream society.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    
+
 
 
                 </div>
@@ -166,7 +255,7 @@
 
 
             <!--Work Report-->
-            <div class="report clearfix mb-5">
+            <div id="workReports" class="report clearfix mb-5">
                 <h2>Work Reports</h2>
                 <p class="mb-4">Please click on the photo below to read our work reports:</p>
                 <div class="report-container d-flex flex-wrap justify-content-center">
@@ -195,65 +284,65 @@
                         <img src="../../assets/images/F-8.png" alt="...">
                     </div>
 
-                    
 
-                    
+
+
                 </div>
             </div>
 
-            
+
         </div>
 
 
-    
+
         <!--Footer Session-->
         <footer>
             <!--Footer for Desktop-->
-            <div class="footer-desktop">
-                <div class="container column-split d-flex justify-content-between pt-4 ">
-                    <div class="footer-left-container">
-                        <img src="../../assets/images/FHEMS_H_Logo-01.png" alt="">
+            <div class="footer-desktop ">
+                <div class="container-fluid px-5 column-split d-flex justify-content-between pt-4 ">
+                    <div class="footer-left-container ">
+                        <img src="../../assets/images/FHEMS_H_Logo-01.png " alt=" ">
                         <p><small>RESPECT DIFFERENCES. EMBRACE DIVERSITY.</small></p>
                     </div>
-                    <div class="footer-right-container mt-1">
+                    <div class="footer-right-container mt-1 ">
                         <p>ROOM 1908, KHORA, 128 BEDFORD RD,</p>
                         <p>TAI KOK TSUI, HONG KONG</p>
                         <p>FREDIEYOUTH@GMAIL.COM</p>
                     </div>
                 </div>
-    
-                <div class="container end-split d-flex justify-content-between pb-0">
-                    <div class="end-left-container d-flex">
-                        <span class="EN-icon">EN</span>
-                        <span class="CHI-icon">繁</span>
-                        <i class="fab fa-facebook-f fa-lg"></i>
-                        <i class="far fa-envelope fa-lg"></i>
+
+                <div class="container-fluid px-5 end-split d-flex justify-content-between align-items-center pb-0 ">
+                    <div class="end-left-container d-flex ">
+                        <a href="#"><span class="EN-icon">EN</span></a>
+                        <a href="#"><span class="CHI-icon">繁</span></a>
+                        <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
                     </div>
-                    <div class="end-right-container">
+                    <div class="end-right-container ">
                         <p> © 2021 FREDIE HUNG. ALL RIGHTS RESERVED. </p>
                     </div>
                 </div>
             </div>
-            
+
             <!--Footer for Mobile-->
-            <div class="footer-mobile">
-                <div class="container d-flex flex-column justify-content-center align-items-center">
-                    <img src="../../assets/images/FHEMS_H_Logo-01.png" alt="">
+            <div class="footer-mobile ">
+                <div class="container d-flex flex-column justify-content-center align-items-center ">
+                    <img src="../../assets/images/FHEMS_H_Logo-01.png " alt=" ">
                     <p><small>RESPECT DIFFERENCES. EMBRACE DIVERSITY.</small></p>
-                    <div class="footer-mobile-contact">
+                    <div class="footer-mobile-contact ">
                         <p>ROOM 1908, KHORA, 128 BEDFORD RD,</p>
                         <p>TAI KOK TSUI, HONG KONG</p>
                         <p>FREDIEYOUTH@GMAIL.COM</p>
                     </div>
 
-                    <div class="footer-mobile-icon d-flex flex-row justify-content-center align-items-center">
-                        <span class="EN-icon">EN</span>
-                        <span class="CHI-icon">繁</span>
-                        <i class="fab fa-facebook-f fa-lg"></i>
-                        <i class="far fa-envelope fa-lg"></i>
+                    <div class="footer-mobile-icon d-flex flex-row justify-content-center align-items-center ">
+                        <a href="#"><span class="EN-icon">EN</span></a>
+                        <a href="#"><span class="CHI-icon">繁</span></a>
+                        <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
                     </div>
 
-                    <div class="footer-mobile-copyright">
+                    <div class="footer-mobile-copyright ">
                         <p> © 2021 FREDIE HUNG. ALL RIGHTS RESERVED. </p>
                     </div>
 

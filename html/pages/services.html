@@ -8,6 +8,7 @@
     <title>FHEMS - Services</title>
 
     <!-- [Elva] CSS Link -->
+    <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/services-style.css">
 
     <!-- [Elva] Bootstrap Link -->
@@ -24,13 +25,103 @@
 </head>
 
 <body>
-    <!-- [Elva] Nav Bar *** Temp ONLY! Need replacement later -->
-    <nav class="nav1">
-        <h2> Nav1 </h2>
-    </nav>
-    <nav class="nav2">
-        <span>ABOUT | SERVICES | ...</span>
-    </nav>
+    <!-- [Elva] Nav Bar Desktop -->
+    <div class="Desktop-Nav fixed-top">
+        <nav class="nav1 container-fluid px-5">
+            <div class="header-head d-flex flex-row ">
+                <div class="head-logo">
+                    <a href="./index.html"><img src="../../assets/images/FHEMS_H_Logo-01.png"></a>
+                </div>
+                <div class="head-social d-flex align-items-center">
+                    <a href="#"><span class="EN-icon">EN</span></a>
+                    <a href="#"><span class="CHI-icon">繁</span></a>
+                    <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                    <a href="./involved.html"><button type="button" class="btn btn-outline-light">GET INVOLVED</button></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2 container-fluid px-5 navbar navbar-expand-md navbar-light sticy-top">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-link">
+                        <a href="./about.html" class="">ABOUT</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./services.html">SERVICES</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./research.html">RESEARCH & PUBLICATIONS</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./workshop.html">LANGUAGE WORKSHOP</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./press.html">PRESS</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./acknowledge.html">ACKNOWLEDGEMENTS</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- [Elva] Nav Bar Mobile -->
+    <div class="Mobile-Nav fixed-top">
+        <nav class="px-5 navbar navbar-dark ">
+            <div class="head-logo">
+                <img src="../../assets/images/FHEMS_H_Logo-01.png">
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+      </button>
+            <div class="collapse navbar-collapse text-center mt-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./services.html">SERVICES </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./research.html">RESEARCH & PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workshop.html">LANGUAGE WORKSHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./press.html">PRESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acknowledge.html">ACKNOWLEDGEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./involved.html">GET INVOLVED</a>
+                    </li>
+                    <div class="mobile-icon-container ">
+                        <div class="head-social d-flex align-items-center justify-content-between">
+                            <a href="#"><span class="EN-icon">EN</span></a>
+                            <a href="#"><span class="CHI-icon">繁</span></a>
+                            <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                        </div>
+                    </div>
+
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
 
 
     <!-- [Elva] Page Banner **change bg-color to image in css-->
@@ -46,11 +137,11 @@
     <div class="page-path">
         <nav aria-label="breadcrumb" class="container">
             <ol class="breadcrumb border-bottom pt-4 mb-0">
-                <li class="breadcrumb-item"><a href="#"><i class="fas fa-home fa-sm mr-1"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home fa-sm mr-1"></i>Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Services</li>
-                <li class="breadcrumb-item active" aria-current="page">What We Do</li> 
-                <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
-                <li class=""><a href="#">Highlights of Activities</a></li>
+                <li class="breadcrumb-item active" aria-current="page">What We Do</li>
+                <p class="seperate active">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                <li class=""><a href="#highlights">Highlights of Activities</a></li>
 
             </ol>
         </nav>
@@ -60,13 +151,14 @@
         <div class="container pt-4">
             <!--Intro-->
             <div class="intro mb-4">
-                <p>Ethnic minorities make up 8% of Hong Kong’s population, amongst them 80,000 are South Asians. Under the impacts of the pandemic, many of minorities who live in Hong Kong continue to face difficulties in their daily lives. It is also challenging for some ethnic minority families to integrate into Hong Kong society due to language barriers.</p>
+                <p>Ethnic minorities make up 8% of Hong Kong’s population, amongst them 80,000 are South Asians. Under the impacts of the pandemic, many of minorities who live in Hong Kong continue to face difficulties in their daily lives. It is also challenging
+                    for some ethnic minority families to integrate into Hong Kong society due to language barriers.</p>
             </div>
 
             <!--What we do-->
             <div class="services mb-5">
                 <div class="whatWeDo-Head">
-                    <div class="whatWeDo-title rounded-pill mx-auto" >
+                    <div class="whatWeDo-title rounded-pill mx-auto">
                         <h5 class="m-0">WHAT WE DO</h5>
                     </div>
                     <div class="whatWeDo-body">
@@ -119,14 +211,14 @@
                     <div class="service-image-desktop">
                         <img src="../../assets/images/resources allocation.JPG" alt="">
                     </div>
-                    
+
                     <div class="service-body">
                         <div class="service-item">
                             <div class="service-description float-right">
                                 <h5>INFORMATION BOARDCASTING</h5>
                                 <p class="m-0">Ethnic minorities Ethnic minorities make up 8% of Hong Kong’s population, amongst them 80,000 are South Asians. Please check our boardcast post here.</p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
 
                 </div>
@@ -142,7 +234,7 @@
                     <img src="../../assets/images/resources allocation.JPG" alt="">
                 </div>
                 <!--desktop-->
-                <div class="services-left" >
+                <div class="services-left">
                     <div class="service-body">
                         <div class="service-item">
                             <div class="service-description float-left">
@@ -190,7 +282,7 @@
                                 <h5>INFORMATION BOARDCASTING</h5>
                                 <p class="m-0">Ethnic minorities Ethnic minorities make up 8% of Hong Kong’s population, amongst them 80,000 are South Asians. Please check our boardcast post here.</p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
 
                 </div>
@@ -206,7 +298,7 @@
                     <img src="../../assets/images/resources allocation.JPG" alt="">
                 </div>
                 <!--desktop-->
-                <div class="services-left" >
+                <div class="services-left">
                     <div class="service-body">
                         <div class="service-item">
                             <div class="service-description float-left">
@@ -236,96 +328,133 @@
 
 
             <!--Highlights of Activities-->
-            <div class="pt-5 text-center">
+            <div id="highlights" class="pt-5 text-center">
                 <h3>Highlights of Activities</h3>
             </div>
 
             <!--Start of SlideShow-->
             <div class="mt-4 mb-5 text-center container">
                 <div class="row d-flex align-items-center justify-content-center">
-                   <div class="col-1 d-flex align-items-center justify-content-center">
-                      <a href="#carouselExampleIndicators" role="button" data-slide="prev">
-                         <div class="carousel-nav-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="col-1 d-flex align-items-center justify-content-center">
+                        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <div class="carousel-nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
                                <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
                             </svg>
-                         </div>
-                      </a>
-                   </div>
-                   <div class="col-9">
-                      <!--Start carousel-->
-                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">            
-                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                               <div class="row">
-                                  <div style="background-image:url('../../assets/images/resources\ allocation.JPG');" class="col-12 col-md d-flex align-items-end justify-content-center">
-                                        <p class="text-white">Hellooooooooooooo!!!! </p>  
-                                  </div>
-                                  <div style="background-image:url('../../assets/images/language-workshops-1.jpg');" class="col-12 col-md d-flex align-items-end justify-content-center">
-                                        <p class="text-white">Hellooooooooooooo!!!! </p>  
-                                  </div>
-                                  <div style="background-image:url('../../assets/images/language-workshops-1.jpg');" class="col-12 col-md d-flex align-items-end justify-content-center">
-                                        <p class="text-white">Hellooooooooooooo!!!! </p>  
-                                  </div>
-                               </div>
                             </div>
-                            <div class="carousel-item">
-                               <div class="row">
-                                    <div style="background-image:url('../../assets/images/aboutfredie.jpeg');" class="col-12 col-md d-flex align-items-end justify-content-center">
-                                        <p class="text-white">Hellooooooooooooo!!!! </p>  
+                        </a>
+                    </div>
+                    <div class="col-9">
+                        <!--Start carousel-->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div style="background-image:url('../../assets/images/resources\ allocation.JPG');" class="col-12 col-md d-flex align-items-end justify-content-center">
+                                            <p class="text-white">Hellooooooooooooo!!!! </p>
+                                        </div>
+                                        <div style="background-image:url('../../assets/images/language-workshops-1.jpg');" class="col-12 col-md d-flex align-items-end justify-content-center">
+                                            <p class="text-white">Hellooooooooooooo!!!! </p>
+                                        </div>
+                                        <div style="background-image:url('../../assets/images/language-workshops-1.jpg');" class="col-12 col-md d-flex align-items-end justify-content-center">
+                                            <p class="text-white">Hellooooooooooooo!!!! </p>
+                                        </div>
                                     </div>
-                                    <div style="background-image:url('../../assets/images/resources\ allocation.JPG');" class="col-12 col-md d-flex align-items-end justify-content-center">
-                                        <p class="text-white">Hellooooooooooooo!!!! </p>  
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div style="background-image:url('../../assets/images/aboutfredie.jpeg');" class="col-12 col-md d-flex align-items-end justify-content-center">
+                                            <p class="text-white">Hellooooooooooooo!!!! </p>
+                                        </div>
+                                        <div style="background-image:url('../../assets/images/resources\ allocation.JPG');" class="col-12 col-md d-flex align-items-end justify-content-center">
+                                            <p class="text-white">Hellooooooooooooo!!!! </p>
+                                        </div>
+                                        <div style="background-image:url('../../assets/images/workshop1.jpg');" class="col-12 col-md d-flex align-items-end justify-content-center">
+                                            <p class="text-white">Hellooooooooooooo!!!! </p>
+                                        </div>
                                     </div>
-                                    <div style="background-image:url('../../assets/images/workshop1.jpg');" class="col-12 col-md d-flex align-items-end justify-content-center" >
-                                        <p class="text-white">Hellooooooooooooo!!!! </p> 
-                                    </div>
-                               </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                      <!--End carousel-->
-                   </div>
-                   <div class="col-1 d-flex align-items-center justify-content-center"><a  href="#carouselExampleIndicators" data-slide="next">
-                      <div class="carousel-nav-icon">
-                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        </div>
+                        <!--End carousel-->
+                    </div>
+                    <div class="col-1 d-flex align-items-center justify-content-center">
+                        <a href="#carouselExampleIndicators" data-slide="next">
+                            <div class="carousel-nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
                          </svg>
-                      </div>
-                      </a>
-                   </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <!--End of SlideShow-->
 
-        
-            
+
+
         </div>
 
 
-    
 
+
+        <!--Footer Session-->
         <footer>
-            <div class="container-fluid">
-                <p>Footer</p>
+            <!--Footer for Desktop-->
+            <div class="footer-desktop ">
+                <div class="container-fluid px-5 column-split d-flex justify-content-between pt-4 ">
+                    <div class="footer-left-container ">
+                        <img src="../../assets/images/FHEMS_H_Logo-01.png " alt=" ">
+                        <p><small>RESPECT DIFFERENCES. EMBRACE DIVERSITY.</small></p>
+                    </div>
+                    <div class="footer-right-container mt-1 ">
+                        <p>ROOM 1908, KHORA, 128 BEDFORD RD,</p>
+                        <p>TAI KOK TSUI, HONG KONG</p>
+                        <p>FREDIEYOUTH@GMAIL.COM</p>
+                    </div>
+                </div>
+
+                <div class="container-fluid px-5 end-split d-flex justify-content-between align-items-center pb-0 ">
+                    <div class="end-left-container d-flex ">
+                        <a href="#"><span class="EN-icon">EN</span></a>
+                        <a href="#"><span class="CHI-icon">繁</span></a>
+                        <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                    </div>
+                    <div class="end-right-container ">
+                        <p> © 2021 FREDIE HUNG. ALL RIGHTS RESERVED. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer for Mobile-->
+            <div class="footer-mobile ">
+                <div class="container d-flex flex-column justify-content-center align-items-center ">
+                    <img src="../../assets/images/FHEMS_H_Logo-01.png " alt=" ">
+                    <p><small>RESPECT DIFFERENCES. EMBRACE DIVERSITY.</small></p>
+                    <div class="footer-mobile-contact ">
+                        <p>ROOM 1908, KHORA, 128 BEDFORD RD,</p>
+                        <p>TAI KOK TSUI, HONG KONG</p>
+                        <p>FREDIEYOUTH@GMAIL.COM</p>
+                    </div>
+
+                    <div class="footer-mobile-icon d-flex flex-row justify-content-center align-items-center ">
+                        <a href="#"><span class="EN-icon">EN</span></a>
+                        <a href="#"><span class="CHI-icon">繁</span></a>
+                        <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                    </div>
+
+                    <div class="footer-mobile-copyright ">
+                        <p> © 2021 FREDIE HUNG. ALL RIGHTS RESERVED. </p>
+                    </div>
+
+                </div>
+
             </div>
         </footer>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,143 +1,408 @@
+/*Setting*/
 
-
-
-html, body{
-    background-color: var(--bg-color);
+html,
+body {
     margin: 0%;
-    box-sizing: border-box;
     overflow-x: hidden;
-
+    background-color: var(--fhems-white) !important;
 }
 
-:root{
-
+:root {
     /* Theme colors */
-    --text-gray: #52514e;
-    --title-light:#7c3a1c;
-    --bg-color:#f7f5f0;
-    --white:#ffffff;
-    --bg-navbar:#3B507E;
-    --text-light:#e3b45a;
-
-
+    --fhems-gray: #52514e;
+    --fhems-brown: #7c3a1c;
+    --fhems-blue: #3B507E;
+    --fhems-yellow: #e3b45a;
+    --fhems-white: #f7f5f0;
+    --text-white: #C4C4C4;
 }
 
 
-/*----------------------Global Classes-------------------- */
-a{
+/* Universal */
+
+h1 {
     font-family: 'Changa', sans-serif;
-    text-decoration: none;
-    color: aliceblue;
+    font-weight: 800 !important;
 }
 
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+h2 {
+    font-family: 'Changa', sans-serif;
+    font-weight: bold !important;
 }
 
-ul{
-    list-style-type: none;
+h3 {
+    font-family: 'Changa', sans-serif;
+    font-weight: bold !important;
+}
+
+h4 {
+    font-family: 'Changa', sans-serif;
+    font-weight: 600 !important;
+}
+
+h5 {
+    font-family: 'Changa', sans-serif;
+    font-weight: 600 !important;
+}
+
+h6 {
+    font-family: 'Changa', sans-serif;
+    font-weight: 500 !important;
+}
+
+p {
+    font-family: 'Cairo', sans-serif;
+}
+
+.container,
+.page-path,
+.page-main {
+    background-color: transparent;
+}
+
+.page-main {
+    color: var(--fhems-gray);
 }
 
 
-/*-----------X----------Global Classes----------X--------- */
+/* Nav Bar Desktop*/
 
-
-
-/*----------------------navbar-------------------- */
-.nav{
-    background: var(--bg-navbar);
-    padding: 0 2rem;
-    height: 0rem;
-    min-height: 11.1vh;
-    overflow: hidden;
-    transition: height 1s ease-in-out;
-}
-
-.nav .nav-menu{
-    justify-content: space-between;
-}
-
-.nav .toggle-collapse{
-    position: absolute;
-    top: 0%;
-    width: 90%;
-    cursor: pointer;
+.Mobile-Nav {
     display: none;
 }
 
-.nav .toggle-collapse .toggle-icons{
-    display: flex;
-    justify-content: flex-end;
-    padding: 3rem 0;
+.nav1 {
+    background-color: var(--fhems-blue);
+    height: 70px;
+    color: var(--fhems-white);
 }
 
-.nav .toggle-collapse .toggle-icons i{
-    font-size: 1.4rem;
-    color: var(--text-light);
-    
-}
-
-.collapse{
-    height: 42rem;
-}
-.nav .nav-items{
-    display: flex;
-    margin: 0;
-    padding-top: 1rem;
-}
-
-.nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
-    position: relative;
-}
-
-.nav .nav-items .nav-link:hover a{
-    background-color: var(--text-light);
-}
-
-
-.nav .nav-brand a{
-    font-size: 2.2rem;
-    padding: 1rem 0;
-    display: block;
+.nav2 {
+    background-color: var(--fhems-yellow);
+    height: 30px;
+    line-height: 30px;
     font-family: 'Cairo', sans-serif;
-    color: var(--text-light);
-}
-
-.nav .social{
-    padding: 1.4rem 0;
-}
-
-.nav .social i{
-    padding: 0.5rem;
-}
-
-.nav .social i:hover{
-    color: #a1c4cf;
-}
-.nav .social a:hover{
-    color: #a1c4cf;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--fhems-white);
 }
 
 
-/*-----------X----------navbar----------X--------- */
+/*Nav1 Desktop*/
 
-/*-- Viewport less then or equal to 750px --*/
+.header-head {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 
-@media only screen and (max-width:1080px){
-    .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
+.head-logo {
+    width: 18rem;
+}
+
+.head-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.head-social a,
+.head-social-mobile a {
+    text-decoration: none;
+    color: var(--fhems-white);
+}
+
+.head-social a:hover,
+.head-social-mobile a:hover {
+    text-decoration: none;
+    color: var(--fhems-white);
+    opacity: 50%;
+}
+
+.head-social .EN-icon {
+    font-family: 'Changa';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-right: 23px;
+}
+
+.head-social .CHI-icon {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin-right: 25px;
+}
+
+.head-social i {
+    margin-right: 25px;
+    padding-bottom: .4rem;
+}
+
+.head-social button {
+    height: 1.75rem;
+    padding: 0rem 0.5rem;
+    font-family: 'Changa';
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 2.4px solid;
+    border-radius: 0.45rem;
+    margin-right: 8px;
+}
+
+
+/*Nav2 Desktop*/
+
+.nav2 .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--fhems-white);
+}
+
+.nav-link a:hover {
+    text-decoration: none;
+    opacity: 70%;
+    color: var(--fhems-gray);
+}
+
+.nav2 span {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .nav2 .navbar-nav {
+        font-size: 0.78rem;
     }
+}
 
-    .nav .toggle-collapse{
-        display: initial;
+
+/* Nav Bar Mobile*/
+
+@media screen and (max-width: 767px) {
+    .Desktop-Nav {
+        display: none;
+    }
+    .Mobile-Nav {
+        display: block;
+        width: 100%;
+    }
+    .Mobile-Nav nav {
+        background-color: var(--fhems-blue);
+        padding: 1.3rem;
+    }
+    .Mobile-Nav .head-logo {
+        max-width: 70%;
+    }
+    .Mobile-Nav .head-logo img {
+        width: 100%;
+    }
+    .Mobile-Nav .navbar-nav {
+        font-family: 'Changa';
+        font-weight: 600;
+    }
+    .mobile-icon-container {
+        place-self: center;
+        margin-top: 3rem;
+    }
+    .head-social span {
+        margin: 0;
+    }
+    .head-social .fa-envelope {
+        margin-right: 0;
+    }
+    .head-social .fa-lg {
+        vertical-align: 0;
     }
 }
 
 
+/* Page */
 
-/*--X -- Viewport less then or equal to 750px -- X--*/
+.page-banner {
+    height: 400px;
+    background-color: rgb(72, 70, 75);
+    color: var(--fhems-yellow);
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    background: no-repeat center;
+    background-color: rgba(0, 0, 0, .6);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center 35%;
+    background-image: url(../assets/images/banner-services.JPG);
+}
+
+.page-banner-title {
+    background-color: transparent;
+}
+
+
+/*Page Path*/
+
+.page-path .fas {
+    margin-left: -0.8rem;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+    font-family: 'Cairo', sans-serif !important;
+    font-size: 0.8rem;
+    color:
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--fhems-gray);
+    opacity: 50%;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+    color: var(--fhems-gray);
+    opacity: 80%;
+}
+
+.breadcrumb .active,
+.breadcrumb .seperate {
+    color: var(--fhems-gray) !important;
+    opacity: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--fhems-blue);
+    height: 160px;
+    color: rgba(247, 245, 240, 0.71);
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.footer-left-container img {
+    height: 45px;
+}
+
+.footer-right-container p,
+.end-right-container p {
+    text-align: right;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--fhems-white);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--fhems-white);
+    opacity: 50%;
+}
+
+.EN-icon {
+    font-family: 'Changa';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-right: 18px;
+}
+
+.CHI-icon {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 1.4rem;
+    line-height: 24px;
+    margin-right: 20px;
+}
+
+footer i {
+    margin-right: 20px;
+}
+
+footer .fa-lg {
+    vertical-align: 0;
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .footer-desktop {
+        font-size: 15px;
+    }
+    .footer-left-container img {
+        padding-top: 5px;
+        height: 40px;
+    }
+    .footer-right-container p,
+    .end-right-container p {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
+    }
+    footer {
+        height: 300px;
+        padding-top: 2rem;
+    }
+    footer img {
+        width: 90%;
+        max-width: 300px;
+    }
+    footer small {
+        width: 70%;
+        max-width: 300px;
+        font-size: 0.7rem;
+    }
+    .footer-mobile-contact p {
+        text-align: center;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    .footer-mobile-icon {
+        margin-top: 35px;
+    }
+    .EN-icon {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .CHI-icon {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    footer i {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    footer .fa-facebook-f {
+        padding-top: 0;
+    }
+    footer .fa-envelope {
+        padding-top: 0;
+    }
+    .footer-mobile-copyright {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}

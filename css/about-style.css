@@ -1,126 +1,14 @@
-/*Setting*/
-
-html,
-body {
-    margin: 0%;
-    overflow-x: hidden;
-    background-color: var(--fhems-white) !important;
-}
-
-:root {
-    /* Theme colors */
-    --fhems-gray: #52514e;
-    --fhems-brown: #7c3a1c;
-    --fhems-blue: #3B507E;
-    --fhems-yellow: #e3b45a;
-    --fhems-white: #f7f5f0;
-    --text-white: #C4C4C4;
-}
-
-
-/* Universal */
-
-h1 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 800 !important;
-}
-
-h2 {
-    font-family: 'Changa', sans-serif;
-    font-weight: bold !important;
-}
-
-h3 {
-    font-family: 'Changa', sans-serif;
-    font-weight: bold !important;
-}
-
-h4 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 600 !important;
-}
-
-h5 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 600 !important;
-}
-
-h6 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 500 !important;
-}
-
-p {
-    font-family: 'Cairo', sans-serif;
-}
-
-.container,
-.page-path,
-.page-main {
-    background-color: transparent;
-}
-
-.page-main {
-    color: var(--fhems-gray);
-}
-
-
-/* Nav Bar*/
-
-.nav1 {
-    background-color: var(--fhems-blue);
-    height: 70px;
-    color: var(--fhems-white);
-}
-
-.nav2 {
-    background-color: var(--fhems-yellow);
-    height: 30px;
-    line-height: 30px;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--fhems-white);
-}
-
-
-/* Page */
+/*Page*/
 
 .page-banner {
-    top: 100px;
-    height: 180px;
-    background-color: rgb(72, 70, 75);
-    /* ^^^^^^^^^^^^^^^^^^^^^^^^   replace image later*/
-    color: var(--fhems-yellow);
-    display: flex;
-    align-items: flex-end;
-    justify-content: start;
+    background-position: center 70%;
+    background-image: url(../assets/images/banner-about.jpeg);
 }
-
-.page-banner-title {
-    background-color: transparent;
-}
-
-
-/*Page Path*/
-
-.page-path .fas{
-    margin-left: -0.8rem;
-}
-
-
-.breadcrumb {
-    background-color: transparent !important;
-    font-family: 'Cairo', sans-serif !important;
-    font-size: 0.8rem;
-}
-
-
 
 
 /* Page Main*/
 
-.fredie-card-image{
+.fredie-card-image {
     background-color: transparent;
     display: flex;
     align-items: start;
@@ -128,17 +16,15 @@ p {
     overflow: hidden;
 }
 
-.fredie-card-image img{
+.fredie-card-image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.related-org span{
+.related-org span {
     font-weight: bold;
 }
-
-
 
 .related-org-card-image {
     display: flex;
@@ -148,219 +34,63 @@ p {
 
 .related-org-card-image img {
     max-height: 6rem;
-
 }
 
 .report-image {
     max-width: 20rem;
 }
+
 .report-image img {
     width: 100%;
     overflow: hidden;
 }
 
 @media screen and (min-width: 1200px) {
-    .fredie-card{
+    .fredie-card {
         max-height: 240px;
     }
-
-    .fredie-card-body{
+    .fredie-card-body {
         padding-right: 5rem !important;
     }
-
-    .fredie-card-image img{
+    .fredie-card-image img {
         width: 100%;
         height: 70%;
     }
-
     .related-org-card {
         width: 70rem;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px){
-    .fredie-card{
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .fredie-card {
         max-height: 260px;
     }
-
-    .fredie-card-body{
+    .fredie-card-body {
         padding-right: 3rem !important;
     }
-
-    .fredie-card-image img{
+    .fredie-card-image img {
         width: 100%;
         height: 90%;
     }
-
     .report-image {
         max-width: 16rem;
     }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .report-image {
         max-width: 18rem;
     }
-
 }
-
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
     .report-image {
         max-width: 12rem;
     }
-
 }
-
 
 @media screen and (max-width: 576px) {
     .related-org-card {
         text-align: center;
     }
-}
-
-
-
-/* Footer */
-
-
-footer {
-    background-color: var(--fhems-blue);
-    height: 160px;
-    color:  rgba(247, 245, 240, 0.71);
-}
-
-.footer-mobile {
-    display: none;
-}
-
-
-.footer-left-container img{
-    height: 45px;
-}
-
-.footer-right-container p,
-.end-right-container p{
-    text-align: right;
-    margin: 0;
-    font-size: 0.85rem;
-}
-
-.EN-icon {
-    font-family: 'Changa';
-    font-style: normal;
-    font-weight: 550;
-    font-size: 1.6rem;
-    line-height: 20px;
-    margin-right: 18px;
-
-}
-
-.CHI-icon {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 550;
-    font-size: 1.5rem;
-    line-height: 20px;
-    margin-right: 20px;
-}
-
-footer i {
-    margin-right: 20px;
-}
-
-footer .fa-facebook-f {
-    padding-top: 1.5px;
-}
-
-footer .fa-envelope {
-    padding-top: 2px;
-}
-
-@media screen and (min-width: 577px) and (max-width: 767px) {
-    .footer-desktop {
-        font-size: 15px;
-    }
-    
-    .footer-left-container img{
-        padding-top: 5px;
-        height: 40px;
-    }
-
-    .footer-right-container p,
-    .end-right-container p{
-    font-size: 0.75rem;
-}
-
-}
-
-
-@media screen and (max-width: 576px) {
-    .footer-desktop {
-        display: none;
-    }
-
-    .footer-mobile{
-        display: flex;
-    }
-
-    footer {
-        height: 300px;
-        padding-top: 2rem;
-    }
-
-    footer img{
-        width: 90%;
-        max-width: 300px;
-    }
-
-    footer small{
-        width: 70%;
-        max-width: 300px;
-        font-size: 0.7rem;
-    }
-
-    .footer-mobile-contact p {
-        text-align: center;
-        margin: 0 ;
-        font-size: 0.9rem;
-    }
-
-    .footer-mobile-icon {
-        margin-top: 35px;;
-    }
-
-    .EN-icon {
-        margin-left: 13px;
-        margin-right: 13px;
-    
-    }
-    
-    .CHI-icon {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    
-    footer i {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    footer .fa-facebook-f {
-        padding-top: 0;
-    }
-    
-    footer .fa-envelope {
-        padding-top: 0;
-    }
-
-    .footer-mobile-copyright {
-        font-size: 0.8rem;
-        margin-top: 1rem;
-    }
-
-
-
-
 }

@@ -1,3 +1,16 @@
+/*ID tag*/
+
+#whoIsFredie::before,
+#workReports::before {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 120px;
+    visibility: none;
+    pointer-events: none;
+}
+
+
 /*Page*/
 
 .page-banner {

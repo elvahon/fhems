@@ -8,6 +8,7 @@
     <title>FHEMS - Research and Publications</title>
 
     <!-- [Elva] CSS Link -->
+    <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/research-style.css">
 
     <!-- [Elva] Bootstrap Link -->
@@ -24,13 +25,102 @@
 </head>
 
 <body>
-    <!-- [Elva] Nav Bar *** Temp ONLY! Need replacement later -->
-    <nav class="nav1">
-        <h2> Nav1 </h2>
-    </nav>
-    <nav class="nav2">
-        <span>ABOUT | SERVICES | ...</span>
-    </nav>
+    <!-- [Elva] Nav Bar Desktop -->
+    <div class="Desktop-Nav fixed-top">
+        <nav class="nav1 container-fluid px-5">
+            <div class="header-head d-flex flex-row ">
+                <div class="head-logo">
+                    <a href="#"><img src="../../assets/images/FHEMS_H_Logo-01.png"></a>
+                </div>
+                <div class="head-social d-flex align-items-center">
+                    <a href="#"><span class="EN-icon">EN</span></a>
+                    <a href="#"><span class="CHI-icon">繁</span></a>
+                    <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                    <a href="./involved.html"><button type="button" class="btn btn-outline-light">GET INVOLVED</button></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2 container-fluid px-5 navbar navbar-expand-md navbar-light sticy-top">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-link">
+                        <a href="./about.html" class="">ABOUT</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./services.html">SERVICES</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./research.html">RESEARCH & PUBLICATIONS</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./workshop.html">LANGUAGE WORKSHOP</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./press.html">PRESS</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-link">
+                        <a href="./acknowledge.html">ACKNOWLEDGEMENTS</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- [Elva] Nav Bar Mobile -->
+    <div class="Mobile-Nav fixed-top">
+        <nav class="px-5 navbar navbar-dark ">
+            <div class="head-logo">
+                <img src="../../assets/images/FHEMS_H_Logo-01.png">
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+      </button>
+            <div class="collapse navbar-collapse text-center mt-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./services.html">SERVICES </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./research.html">RESEARCH & PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workshop.html">LANGUAGE WORKSHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./press.html">PRESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acknowledge.html">ACKNOWLEDGEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./involved.html">GET INVOLVED</a>
+                    </li>
+                    <div class="mobile-icon-container ">
+                        <div class="head-social d-flex align-items-center justify-content-between">
+                            <a href="#"><span class="EN-icon">EN</span></a>
+                            <a href="#"><span class="CHI-icon">繁</span></a>
+                            <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                        </div>
+                    </div>
+
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
 
 
     <!-- [Elva] Page Banner **change bg-color to image in css-->
@@ -46,11 +136,9 @@
     <div class="page-path">
         <nav aria-label="breadcrumb" class="container">
             <ol class="breadcrumb border-bottom pt-4 mb-0">
-                <li class="breadcrumb-item"><a href="#"><i class="fas fa-home fa-sm mr-1"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="./index.html"><i class="fas fa-home fa-sm mr-1"></i>Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Research & Publications</li>
-                <li class="breadcrumb-item active" aria-current="page">Research</li>
-                <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
-                <li class=""><a href="#">Publicatons</a></li>
+
             </ol>
         </nav>
     </div>
@@ -189,9 +277,59 @@
             </div>
         </div>
 
+        <!--Footer Session-->
         <footer>
-            <div class="container-fluid">
-                <p>Footer</p>
+            <!--Footer for Desktop-->
+            <div class="footer-desktop ">
+                <div class="container-fluid px-5 column-split d-flex justify-content-between pt-4 ">
+                    <div class="footer-left-container ">
+                        <img src="../../assets/images/FHEMS_H_Logo-01.png " alt=" ">
+                        <p><small>RESPECT DIFFERENCES. EMBRACE DIVERSITY.</small></p>
+                    </div>
+                    <div class="footer-right-container mt-1 ">
+                        <p>ROOM 1908, KHORA, 128 BEDFORD RD,</p>
+                        <p>TAI KOK TSUI, HONG KONG</p>
+                        <p>FREDIEYOUTH@GMAIL.COM</p>
+                    </div>
+                </div>
+
+                <div class="container-fluid px-5 end-split d-flex justify-content-between align-items-center pb-0 ">
+                    <div class="end-left-container d-flex ">
+                        <a href="#"><span class="EN-icon">EN</span></a>
+                        <a href="#"><span class="CHI-icon">繁</span></a>
+                        <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                    </div>
+                    <div class="end-right-container ">
+                        <p> © 2021 FREDIE HUNG. ALL RIGHTS RESERVED. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer for Mobile-->
+            <div class="footer-mobile ">
+                <div class="container d-flex flex-column justify-content-center align-items-center ">
+                    <img src="../../assets/images/FHEMS_H_Logo-01.png " alt=" ">
+                    <p><small>RESPECT DIFFERENCES. EMBRACE DIVERSITY.</small></p>
+                    <div class="footer-mobile-contact ">
+                        <p>ROOM 1908, KHORA, 128 BEDFORD RD,</p>
+                        <p>TAI KOK TSUI, HONG KONG</p>
+                        <p>FREDIEYOUTH@GMAIL.COM</p>
+                    </div>
+
+                    <div class="footer-mobile-icon d-flex flex-row justify-content-center align-items-center ">
+                        <a href="#"><span class="EN-icon">EN</span></a>
+                        <a href="#"><span class="CHI-icon">繁</span></a>
+                        <a href="https://www.facebook.com/hungfredie"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="mailto:FREDIEYOUTH@GMAIL.COM"><i class="far fa-envelope fa-lg"></i></a>
+                    </div>
+
+                    <div class="footer-mobile-copyright ">
+                        <p> © 2021 FREDIE HUNG. ALL RIGHTS RESERVED. </p>
+                    </div>
+
+                </div>
+
             </div>
         </footer>
 

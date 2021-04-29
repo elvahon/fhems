@@ -1,120 +1,9 @@
-/*Setting*/
-
-html,
-body {
-    margin: 0%;
-    overflow-x: hidden;
-    background-color: var(--fhems-white) !important;
-}
-
-:root {
-    /* Theme colors */
-    --fhems-gray: #52514e;
-    --fhems-brown: #7c3a1c;
-    --fhems-blue: #3B507E;
-    --fhems-yellow: #e3b45a;
-    --fhems-white: #f7f5f0;
-    --text-white: #C4C4C4;
-}
-
-
-/* Universal */
-
-h1 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 800 !important;
-}
-
-h2 {
-    font-family: 'Changa', sans-serif;
-    font-weight: bold !important;
-}
-
-h3 {
-    font-family: 'Changa', sans-serif;
-    font-weight: bold !important;
-}
-
-h4 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 600 !important;
-}
-
-h5 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 600 !important;
-}
-
-h6 {
-    font-family: 'Changa', sans-serif;
-    font-weight: 500 !important;
-}
-
-p {
-    font-family: 'Cairo', sans-serif;
-}
-
-.container,
-.page-path,
-.page-main {
-    background-color: transparent;
-}
-
-.page-main {
-    color: var(--fhems-gray);
-}
-
-
-/* Nav Bar*/
-
-.nav1 {
-    background-color: var(--fhems-blue);
-    height: 70px;
-    color: var(--fhems-white);
-}
-
-.nav2 {
-    background-color: var(--fhems-yellow);
-    height: 30px;
-    line-height: 30px;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--fhems-white);
-}
-
-
-/* Page */
+/*Page*/
 
 .page-banner {
-    top: 100px;
-    height: 180px;
-    background-color: rgb(72, 70, 75);
-    /* ^^^^^^^^^^^^^^^^^^^^^^^^   replace image later*/
-    color: var(--fhems-yellow);
-    display: flex;
-    align-items: flex-end;
-    justify-content: start;
+    background-position: center 50%;
+    background-image: url(../assets/images/banner-research.jpeg);
 }
-
-.page-banner-title {
-    background-color: transparent;
-}
-
-
-/*Page Path*/
-
-.page-path .fas{
-    margin-left: -0.8rem;
-}
-
-
-.breadcrumb {
-    background-color: transparent !important;
-    font-family: 'Cairo', sans-serif !important;
-    font-size: 0.8rem;
-}
-
 
 
 /* Page Main*/
@@ -194,12 +83,4 @@ p {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-}
-
-
-/* Footer */
-
-footer {
-    background-color: var(--fhems-blue);
-    height: 160px;
 }
